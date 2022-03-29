@@ -38,7 +38,7 @@ function ProductScreen() {
         <Message variant='danger'>{error}</Message>
       ) : (
         <Row>
-          <Col md={6}>
+          <Col md={5}>
             <Image src={product.image} alt={product.name} fluid />
           </Col>
           <Col md={3}>
@@ -58,7 +58,7 @@ function ProductScreen() {
               </ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
