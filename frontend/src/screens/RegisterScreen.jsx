@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useSearchParams, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
@@ -20,8 +20,6 @@ function RegisterScreen() {
   const { loading, error, userInfo } = useSelector(
     (state) => state.userRegister
   )
-
-  const [searchParams] = useSearchParams()
 
   const redirect = '/'
 
