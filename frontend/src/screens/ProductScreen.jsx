@@ -21,6 +21,7 @@ function ProductScreen() {
 
   useEffect(() => {
     dispatch(listProductDetails(params.id))
+    // eslint-disable-next-line
   }, [dispatch])
 
   const addToCartHandler = () => {
