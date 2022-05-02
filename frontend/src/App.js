@@ -26,10 +26,19 @@ const App = () => {
         <Container>
           <Routes>
             <Route path='/search/:keyword' element={<HomeScreen />} />
+            <Route
+              path='/search/:keyword/page/:pageNumber'
+              element={<HomeScreen />}
+            />
+            <Route path='/page/:pageNumber' element={<HomeScreen />} />
             <Route path='/' element={<HomeScreen />} />
             <Route path='/admin/userlist' element={<UserListScreen />} />
             <Route path='/admin/user/:id/Edit' element={<UserEditScreen />} />
             <Route path='/admin/productlist' element={<ProductListScreen />} />
+            <Route
+              path='/admin/productlist/:pageNumber'
+              element={<ProductListScreen />}
+            />
             <Route
               path='/admin/product/:id/Edit'
               element={<ProductEditScreen />}
