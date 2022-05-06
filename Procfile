@@ -1,1 +1,1 @@
-web: node backend/server.js
+web: node --es-module-specifier-resolution=node backend/server.js
